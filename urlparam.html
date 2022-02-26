@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<HTML lang=en>
+<!---
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+--->
+
+<head>
+  <title>URL Parameters</title>
+  <style>
+    body{
+      padding: 10px;
+    }
+
+    input {
+      width: 500px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+       font-family: Georgia,serif;
+      color: #333;
+    }
+  </style>
+</head>
+
+<p>URL: http://test.com/?<span id="params"></span></p>
+<p><input placeholder="Enter URL params" /></p>
+<pre id="results">{}</pre>
+
+<script>
+var getAllUrlParams = require("./getAllUrlParams.js");
+var params = document.getElementById('params');
+var results = document.getElementById('results');
+
+document.querySelector('input').addEventListener('keyup', function() {
+  params.innerText = this.value;
+  results.innerText = JSON.stringify(getAllUrlParams("http://test.com/?" + this.value), null, 2);
+});
+</script>
