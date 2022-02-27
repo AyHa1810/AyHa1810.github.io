@@ -13,4 +13,5 @@ const getFileInfoFromFolder = (route) => {
   return response;
 }
 
-const { name, extenstion, fileSizeInBytes, modifiedTime } = getFileInfoFromFolder(".")
+const { name, extenstion, fileSizeInBytes, modifiedTime } = getFileInfoFromFolder(".");
+const dircontent = [ name, extenstion, fileSizeInBytes, modifiedTime ]
