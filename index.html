@@ -25,5 +25,15 @@
     
     <table>
     </table>
+    <script defer src="./fileList.js"></script>
+    <script defer src="./createTable.js"></script>
+    <script defer>
+      const dircontent = { name, extenstion, fileSizeInBytes, modifiedTime }
+
+      let table = document.querySelector("table");
+      let data = Object.keys(dircontent[0]);
+      generateTableHead(table, data);
+      generateTable(table, dircontent);
+    </script>
   </body>
 </html>
