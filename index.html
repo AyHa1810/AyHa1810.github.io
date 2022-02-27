@@ -19,7 +19,7 @@
   <body>
   	  <h1>Ok</h1>
     <p class="txt1">Demo website or smth idk</p>
-    <?php
+    <script language="php">
 echo "Here are our files";
 $path = ".";
 $dh = opendir($path);
@@ -31,6 +31,6 @@ while (($file = readdir($dh)) !== false) {
     }
 }
 closedir($dh);
-?> 
+</script> 
   </body>
 </html>
