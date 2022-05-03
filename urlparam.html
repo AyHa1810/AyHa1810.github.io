@@ -38,12 +38,13 @@
 
 <!--- function.js --->
 <script src="./getAllUrlParams.js" language="javascript">
-//var getAllUrlParams = require("./getAllUrlParams.js");
-var params = document.getElementById('params');
-var results = document.getElementById('results');
+  //var getAllUrlParams = require("./getAllUrlParams.js");
+  var params = document.getElementById('params');
+  var results = document.getElementById('results');
 
-document.querySelector('input').addEventListener('keyup', function() {
-  params.innerText = this.value;
-  results.innerText = JSON.stringify(getAllUrlParams("http://test.com/?" + this.value), null, 2);
-});
+  document.querySelector('input').addEventListener('keyup', function() {
+    params.innerText = this.value;
+    results.innerText = JSON.stringify(getAllUrlParams("http://test.com/?" + this.value), null, 2);
+  });
 </script>
+</html>
