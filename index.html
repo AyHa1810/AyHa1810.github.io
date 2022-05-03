@@ -8,7 +8,7 @@
         width: 64em;
         margin: 0 auto;
         font-family: Tahoma, Verdana, Arial, sans-serif;
-        font-size: 69px;
+        font-size: 18px;
       }
       p.txt1 {
         width: 21em;
@@ -20,18 +20,20 @@
   <body>
   	  <h1>Ok</h1>
     <p class="txt1">Demo website or smth idk</p>
-  
+ 
+    <!--- excluded since server side execution isnt possible on GitHub
     <h1>Directory Contents</h1>
     
     <table>
     </table>
-    <script src="./scripts/fileList.js"></script>
-    <script src="./scripts/createTable.js"></script>
+    <script src="./scripts/fileList.js" defer></script>
+    <script src="./scripts/createTable.js" defer></script>
     <script>
       let table = document.querySelector("table");
       let data = Object.keys(dircontent[0]);
       generateTableHead(table, data);
       generateTable(table, dircontent);
     </script>
+    --->
   </body>
 </html>
