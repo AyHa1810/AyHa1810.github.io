@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="UTF-8">
-    <title>bruh</title>
-    <style>
-      body {
-        width: 64em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-        font-size: 18px;
-      }
-      p.txt1 {
-        width: 21em;
-        border: 1px solid #000000;
-        word-wrap: break-word;
-      }
-      </style>
-  </head>
-  <body>
-  	  <h1>Ok</h1>
-    <p class="txt1">Demo website or smth idk <br>such an ass of a website lmao</p>
-    <p><br></p>
-    <p>Here are some website links btw:</p>
-    <p>url parameter test: <a href="./urlparam.html">urlparam.html</a></p>
-    <p>redirect test: <a href="./redirect.html">redirect.html</a></p>
-    <p>embed test: <a href="./discord-embed.html">discord-embed.html</a> (just mention the link anywhere where link embed works :P)</p>
-    <p>Source of this website thingy: <a href="https://github.com/AyHa1810/AyHa1810.github.io">here</a></p>
+    <head>
+        <title>bruh</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/default.css">
+        <style>
+            p.txt1 {
+                /*width: 21em;*/
+                width: 75%;
+                max-width: 21em;
+                border: 1px solid #000000;
+                word-wrap: break-word;
+            }
+            </style>
+    </head>
+    <body>
+    	    <h1>Ok</h1>
+        <p class="txt1">Demo website or smth idk <br>such an ass of a website lmao</p>
+        <p><br></p>
+        <p>Here are some website links btw:</p>
+        <p>url parameter test: <a href="./urlparam.html">urlparam.html</a></p>
+        <p>redirect test: <a href="./redirect.html">redirect.html</a></p>
+        <p>embed test: <a href="./discord-embed.html">discord-embed.html</a> (just mention the link anywhere where link embed works :P)</p>
+        <p>Source of this website thingy: <a href="https://github.com/AyHa1810/AyHa1810.github.io">here</a></p>
  
-    <!--- excluded since server side execution isnt possible on GitHub
-    <h1>Directory Contents</h1>
-    
-    <table>
-    </table>
-    <script src="./scripts/fileList.js" defer></script>
-    <script src="./scripts/createTable.js" defer></script>
-    <script>
-      let table = document.querySelector("table");
-      let data = Object.keys(dircontent[0]);
-      generateTableHead(table, data);
-      generateTable(table, dircontent);
-    </script>
-    --->
-  </body>
+        <!--- excluded since server side execution isnt possible on GitHub
+        <h1>Directory Contents</h1>
+        
+        <table>
+        </table>
+        <script src="./scripts/fileList.js" defer></script>
+        <script src="./scripts/createTable.js" defer></script>
+        <script>
+            let table = document.querySelector("table");
+            let data = Object.keys(dircontent[0]);
+            generateTableHead(table, data);
+            generateTable(table, dircontent);
+        </script>
+        --->
+    </body>
+
+    <!-- <meta name="author" content="AyHa1810" /> -->
+    <meta property="og:title" content="Site thingyh" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://twitter.com/AyHa1810" />
+    <meta property="og:description" content="ur mama thicc" />
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1072020503189004308/1085467393880498196/image.png" />
+    <meta name="theme-color" content="#43B581" data-react-helmet="true" />
+    <link type="application/json+oembed" href="./discord-embed.json" />
+
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image" />
 </html>

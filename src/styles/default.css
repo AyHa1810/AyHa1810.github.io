@@ -1,0 +1,25 @@
+body {
+    /*width: 64em; */
+    width: 100%;
+    margin: 5 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 18px;
+    color: #f0f8ff;
+    background-color: #6969FF;
+}
+
+a:link {
+    color: #deb887;
+}
+a:visited {
+    background-color: cyan;
+}
+a:hover {
+    color: blueviolet;
+    background-color: lightgreen;
+}
+  
+a:active {
+    color: blueviolet;
+    background-color: hotpink;
+}  
