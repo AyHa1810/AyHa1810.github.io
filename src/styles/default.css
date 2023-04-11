@@ -4,13 +4,22 @@ body {
     height: 100%;
     position: fixed;
     display: inline-block;
-    margin: 5px auto;
+    margin: 5px 10px;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 18px;
     color: #f0f8ff;
     /*background-color: #6969FF; */
     background: linear-gradient(180deg, #6969FF, #ad32ff);
     background-attachment: fixed;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+::selection {
+    color: red;
+    background: yellow;
 }
 
 a:link {
