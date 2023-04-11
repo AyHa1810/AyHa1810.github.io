@@ -1,11 +1,16 @@
 body {
     /*width: 64em; */
     width: 100%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
     margin: 5 auto;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 18px;
     color: #f0f8ff;
-    background-color: #6969FF;
+    /*background-color: #6969FF; */
+    background: linear-gradient(180deg, #6969FF, #ad32ff);
+    background-attachment: fixed;
 }
 
 a:link {
