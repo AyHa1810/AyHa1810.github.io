@@ -1,0 +1,90 @@
+body{
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+input {
+    background-color: #f0f0f0;
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+#output {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: Georgia,serif;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.codebox { /* #results */
+    font-size: 14px;
+    width: auto;
+    overflow: auto;
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding: 0px 18px; /* 10px 18px */
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-input {
+    background-color: #2e2e2e;
+    border: 1px solid #f0f0f0;
+    color: white;
+}
+
+#buton {
+    background-color: #d9d9d9;
+    border-color: lightgrey grey grey lightgrey;
+    border-style: solid;
+    border-width: 2px;
+    border-image: initial;
+    /*border: 2px outset grey;*/
+    color: black;
+    vertical-align: top;
+    padding: 1px 4px;
+}
+#buton:hover {
+    background-color: #dddddd;
+}
+#buton:active {
+    border: 2px solid;
+    border-top-color: grey;
+    border-left-color: grey;
+    border-bottom-color: lightgrey;
+    border-right-color: lightgrey;
+    border-image: invert;
+    line-height: normal;
+    padding: 2px 3px 0px 5px;
+}
+
+#buton.dark {
+    background-color: blue;
+    border: 2px solid;
+    border-color: lightgrey grey grey lightgrey;
+    border-image: initial;
+    color: white;
+}
+
+#output.dark {
+    color: #f0f0f0;
+}
+
+/*.dark-output {
+    color: #f0f0f0 !important;
+}*/
+

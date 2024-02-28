@@ -1,8 +1,9 @@
+/* for debugging purposes, pls comment out when not required :D */
+* {
+    outline: 1px solid red;
+}
+
 body {
-    /*width: 64em; */
-    width: 100%;
-    height: 100%;
-    position: fixed;
     display: inline-block;
     margin: 5px 10px;
     font-family: Tahoma, Verdana, Arial, sans-serif;
@@ -10,19 +11,19 @@ body {
     color: #f0f8ff;
     /*background-color: #6969FF; */
     /*background: linear-gradient(180deg, #6969FF, #ad32ff); */
-    background-image: url( './anim1.svg' );
+    background-image: url( '../assets/anim1.svg' );
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
     background-origin: border-box;
-    /*animation: rotate-gradient linear 10s infinite; */
+    /*animation: rotate-gradient cubic-bezier(0.63,-0.47, 0.31, 1.35) 10s infinite; */
 }
 
-/*@keyframes rotate-gradient {
+@keyframes rotate-gradient {
     to { transform: rotate(360deg) }
-} */
+} 
 
 ::-moz-selection { /* Code for Firefox */
     color: red;
@@ -47,5 +48,4 @@ a:hover {
 a:active {
     color: blueviolet;
     background-color: hotpink;
-}  
-
+}

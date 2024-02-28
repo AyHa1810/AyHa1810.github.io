@@ -1,0 +1,20 @@
+/* for debugging purposes, pls comment out when not required :D */
+/* * {
+    outline: 1px solid red;
+} */
+
+body {
+    background-color: black;
+    color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content {
+    width: 60%;
+    min-width: 320px;
+    font-style: italic;
+    padding: 5px 5px;
+    margin: 5px auto;
+    border: 2px solid gray;
+    border-radius: 8px;
+}

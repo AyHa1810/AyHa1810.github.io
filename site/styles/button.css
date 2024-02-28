@@ -1,0 +1,32 @@
+.button {
+    background-color: #d9d9d9;
+    border-color: lightgrey grey grey lightgrey;
+    border-style: solid;
+    border-width: 2px;
+    border-image: initial;
+    /*border: 2px outset grey;*/
+    color: black;
+    vertical-align: top;
+    padding: 1px 4px;
+}
+.button:hover {
+    background-color: #dddddd;
+}
+.button:active {
+    border: 2px solid;
+    border-top-color: grey;
+    border-left-color: grey;
+    border-bottom-color: lightgrey;
+    border-right-color: lightgrey;
+    border-image: invert;
+    line-height: normal;
+    padding: 2px 3px 0px 5px;
+}
+
+.button.dark {
+    background-color: blue;
+    border: 2px solid;
+    border-color: lightgrey grey grey lightgrey;
+    border-image: initial;
+    color: white;
+}
